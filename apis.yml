@@ -1,8 +1,23 @@
 aid: armstrong-robotics
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/armstrong-robotics.png
 name: Armstrong Robotics
-description: Armstrong Robotics is a company surfaced as a portfolio company of bloomberg-beta and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Armstrong Robotics is building general-purpose robots for commercial kitchens, beginning
+  with autonomous dishwashing systems that load, run, and unload dishware without human intervention.
+  Backed by Bloomberg Beta, the company is an early-stage robotics startup focused on kitchen labor
+  automation. It currently exposes no public developer API, SDK, or documentation; it was added to the
+  API Evangelist network as a portfolio-sourced lead awaiting a public API surface, and this profile
+  carries only the identity and domain-security signals that could be verified from its public website.
 url: https://raw.githubusercontent.com/api-evangelist/armstrong-robotics/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Robotics
+- Automation
+- Artificial Intelligence
+- Hardware
+- Kitchen Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +42,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/armstrong-robotics-domain-security.yml
 - type: Website
   url: https://armstrong.ai/
+- type: PrivacyPolicy
+  url: https://armstrong.ai/privacy-policy
+- type: TermsOfService
+  url: https://armstrong.ai/terms-of-service
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
